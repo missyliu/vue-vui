@@ -10,7 +10,7 @@
       @keydown.esc="reset"
       @blur="showDropdown = false"
     />
-    <ul :style="{display: (showDropdown ? 'block' : 'none') }">
+    <ul :style="{display: (showDropdown ? 'block' : 'none') }" v-el:dropdown>
       <li v-for="item in items" :class="{'active': isActive($index)}">
         <a @mousedown.prevent="hit" @mousemove="setActive($index)">
           <partial :name="templateName"></partial>
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import coerceBoolean from '../utils/coerceBoolean'
 import ajax from '../utils/ajax'
 
@@ -30,12 +29,15 @@ export default {
     placeholder: {
       type: String
     },
-    ajaxUrl: {
+    src: {
       type: String
     },
-    key: {
+    ret: {
       type: String,
       default: null
+    },
+    key: {
+      type: String
     },
     limit: {
       type: Number,
@@ -63,14 +65,14 @@ export default {
     },
     onHit: {
       type: Function,
-      default(items) {
+      default(item) {
         this.reset()
-        this.query = items
+        this.query = item[this.key] || item
       }
     }
   },
   partials: {
-    'default': '<span v-html="item"><span>'
+    'default': '<span v-html="item | highlight query"></span>'
   },
   data() {
     return {
@@ -85,10 +87,10 @@ export default {
     primitiveData() {
       if(this.data) {
         return this.data.filter(value => {
-          value = this.matchCase ? value : value.toLowerCase();
-          var query = this.matchCase ? this.query : this.query.toLowerCase();
-          return this.matchStart ? value.indexOf(query) === 0 : value.indexOf(query) !== -1;
-        }).slice(0, this.limit);
+          value = this.matchCase ? value : value.toLowerCase()
+          var query = this.matchCase ? this.query : this.query.toLowerCase()
+          return this.matchStart ? value.indexOf(query) === 0 : value.indexOf(query) !== -1
+        }).slice(0, this.limit)
       }
     }
   },
@@ -97,6 +99,7 @@ export default {
   },
   ready() {
     if(this.templateName && this.templateName !== 'default') {
+      // Notice: 这里需要用到全局 Vue，使用该组件该方法时要注意引入 Vue
       Vue.partial(this.templateName, this.template)
     }
   },
@@ -110,9 +113,11 @@ export default {
         this.items = this.primitiveData
         this.showDropdown = this.items.length ? true : false
       }
-      if(this.ajaxUrl) {
-        ajax(this.ajaxUrl + this.query, (data) => {
-          this.items = (this.key ? data[this.key] : data).slice(0, this.limit)
+      if(this.src) {
+        ajax(this.src + this.query, (data) => {
+          // TODO: 目前 ret 对应支持数据格式为：data = {ret:xxx, data: {}}
+          // this.items = (this.ret ? data[this.ret] : data).slice(0, this.limit)
+          this.items = (this.ret ? data.data[this.ret] : data).slice(0, this.limit)
           this.showDropdown = this.items.length ? true : false
         })
       }

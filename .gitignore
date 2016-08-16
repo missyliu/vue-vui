@@ -39,5 +39,4 @@ npm-debug.log
 
 # dev ignore
 docs/
-Note.md
-index.html
+app.js
