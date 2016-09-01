@@ -1,9 +1,9 @@
-import suggest from './Suggest.vue'
 import tree from './Tree.vue'
+import table from './Table.vue'
+import suggest from './Suggest.vue'
 
-const VUI = {
-  suggest,
-  tree
+export default {
+  tree,
+  table,
+  suggest
 }
-
-export default VUI

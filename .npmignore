@@ -39,6 +39,4 @@ npm-debug.log
 
 # dev ignore
 docs/
-Note.md
-index.html
-test.html
+Arch.md
