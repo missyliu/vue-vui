@@ -39,4 +39,4 @@ npm-debug.log
 
 # dev ignore
 docs/
-app.js
+Arch.md

@@ -27,15 +27,10 @@ module.exports = {
         }
       }
     ]
+  },
+  vue: {
+    loaders: {
+      scss: ['vue-style-loader','css', 'sass'].join('!')
+    }
   }
-  // ,
-  // plugins: [
-  //   new webpack.optimize.UglifyJsPlugin({
-  //     sourceMap: false,
-  //     drop_console: true,
-  //     compress: {
-  //         warnings: false
-  //     }
-  //   })
-  // ]
 };

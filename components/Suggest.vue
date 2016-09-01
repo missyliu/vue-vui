@@ -97,12 +97,12 @@ export default {
   created() {
     this.items = this.primitiveData
   },
-  ready() {
-    if(this.templateName && this.templateName !== 'default') {
-      // Notice: 这里需要用到全局 Vue，使用该组件该方法时要注意引入 Vue
-      Vue.partial(this.templateName, this.template)
-    }
-  },
+  // beforeCompile() {
+  //   if(this.templateName && this.templateName !== 'default') {
+  //     // Notice: https://github.com/yuche/vue-strap/issues/216
+  //     Vue.partial(this.templateName, this.template)
+  //   }
+  // },
   methods: {
     update() {
       if(!this.query) {
@@ -110,7 +110,8 @@ export default {
         return false
       }
       if(this.data) {
-        this.items = this.primitiveData
+        // 注意 当传入data时 希望有template情况
+        this.items = this.primitiveData || this.data
         this.showDropdown = this.items.length ? true : false
       }
       if(this.src) {
@@ -152,22 +153,48 @@ export default {
 }
 </script>
 
-<style lang="css">
-.vui-suggest {
-  width: 200px;
+<style lang="css" scoped>
+/* format */
+.vui-suggest input, .vui-suggest ul {
+  margin: 0;
+  padding: 0;
 }
 .vui-suggest input {
+  outline: 0 none;
   width: 100%;
 }
 .vui-suggest ul {
-  margin: 0;
-  background-color: #f1f1f1;
+  list-style: none;
 }
 .vui-suggest a {
-  cursor: pointer;
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+}
+/* styles */
+.vui-suggest {
+  position: relative;
+}
+.vui-suggest ul {
+  position: absolute;
+  left: 0;
+  overflow-y: auto;
+  min-width: 100%;
+  max-height: 130px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 3px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.vui-suggest a {
   display: block;
+  padding: 4px 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
 }
 .vui-suggest .active {
-  background-color: pink;
+  background-color: rgba(87, 197, 247, 0.2);
 }
 </style>
