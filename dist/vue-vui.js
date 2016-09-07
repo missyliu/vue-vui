@@ -64,20 +64,30 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	var _Tree2 = _interopRequireDefault(_Tree);
 
-	var _Table = __webpack_require__(10);
+	var _Suggest = __webpack_require__(10);
+
+	var _Suggest2 = _interopRequireDefault(_Suggest);
+
+	var _Table = __webpack_require__(17);
 
 	var _Table2 = _interopRequireDefault(_Table);
 
-	var _Suggest = __webpack_require__(15);
+	var _Pagination = __webpack_require__(21);
 
-	var _Suggest2 = _interopRequireDefault(_Suggest);
+	var _Pagination2 = _interopRequireDefault(_Pagination);
+
+	var _Pager = __webpack_require__(26);
+
+	var _Pager2 = _interopRequireDefault(_Pager);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
 	  tree: _Tree2.default,
+	  suggest: _Suggest2.default,
 	  table: _Table2.default,
-	  suggest: _Suggest2.default
+	  pagination: _Pagination2.default,
+	  pager: _Pager2.default
 	};
 
 /***/ },
@@ -10692,8 +10702,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] components/Table.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(14)
+	  console.warn("[vue-loader] components/Suggest.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(16)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -10703,7 +10713,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), false)
 	  if (!hotAPI.compatible) return
-	  var id = "_v-499fb026/Table.vue"
+	  var id = "_v-34bee8dc/Suggest.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -10727,8 +10737,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/.npminstall/sass-loader/4.0.0/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Table.vue", function() {
-				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/.npminstall/sass-loader/4.0.0/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Table.vue");
+			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-34bee8dc&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Suggest.vue", function() {
+				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-34bee8dc&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Suggest.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -10746,7 +10756,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	// module
-	exports.push([module.id, ".vui-table {\n  position: relative; }\n  .vui-table-bd {\n    position: absolute;\n    width: 100%; }\n    .vui-table-bd table {\n      width: 100%;\n      max-width: 100%;\n      border-collapse: collapse;\n      border-spacing: 0; }\n    .vui-table-bd thead tr {\n      border: 1px solid #d4d4d4; }\n    .vui-table-bd th {\n      padding: 12px 4px;\n      background-color: #f8f8f8;\n      font-size: 12px;\n      text-align: left; }\n    .vui-table-bd tbody tr {\n      border: 1px solid #d4d4d4;\n      border-width: 0 1px; }\n    .vui-table-bd tbody tr:hover {\n      background-color: rgba(87, 197, 247, 0.2); }\n    .vui-table-bd td {\n      padding: 10px 4px;\n      overflow: hidden;\n      white-space: nowrap;\n      text-overflow: ellipsis;\n      font-size: 12px; }\n    .vui-table-bd tr:not(:last-child) {\n      border-bottom: 1px solid #f3f3f3; }\n    .vui-table-bd tr:last-child {\n      border-bottom: 1px solid #d4d4d4; }\n  .vui-table-divider {\n    display: inline-block;\n    margin: 0 4px;\n    width: 1px;\n    height: 8px;\n    background-color: #ccc; }\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* format */\n.vui-suggest input[_v-34bee8dc], .vui-suggest ul[_v-34bee8dc] {\n  margin: 0;\n  padding: 0;\n}\n.vui-suggest input[_v-34bee8dc] {\n  outline: 0 none;\n  width: 100%;\n}\n.vui-suggest ul[_v-34bee8dc] {\n  list-style: none;\n}\n.vui-suggest a[_v-34bee8dc] {\n  text-decoration: none;\n  color: rgb(102, 102, 102);\n}\n/* styles */\n.vui-suggest[_v-34bee8dc] {\n  position: relative;\n}\n.vui-suggest ul[_v-34bee8dc] {\n  position: absolute;\n  left: 0;\n  overflow-y: auto;\n  min-width: 100%;\n  max-height: 130px;\n  background-color: rgb(255, 255, 255);\n  border: 1px solid rgb(217, 217, 217);\n  border-radius: 3px;\n  line-height: 1.5;\n  font-size: 12px;\n}\n.vui-suggest a[_v-34bee8dc] {\n  display: block;\n  padding: 4px 8px;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  cursor: pointer;\n}\n.vui-suggest .active[_v-34bee8dc] {\n  background-color: rgba(87, 197, 247, 0.2);\n}\n", ""]);
 
 	// exports
 
@@ -10761,148 +10771,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  value: true
 	});
 
-	var _vue = __webpack_require__(7);
-
-	var _vue2 = _interopRequireDefault(_vue);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	  props: {
-	    columns: {
-	      type: Array
-	    },
-	    data: {
-	      type: Array,
-	      default: function _default() {
-	        return [];
-	      }
-	    }
-	  },
-	  ready: function ready() {
-	    this.compileRender();
-	  },
-
-	  methods: {
-	    compileRender: function compileRender() {
-	      var _this = this;
-
-	      this.$nextTick(function () {
-	        var $el = _this.$els.render;
-
-	        for (var i = 0; i < _this.columns.length; i++) {
-	          var curCol = _this.columns[i];
-	          var dataIndex = curCol.dataIndex;
-	          var renderFn = curCol.render;
-	          if (renderFn) {
-	            for (var j = 0; j < _this.data.length; j++) {
-	              var value = _this.data[j];
-	              var template = renderFn(value[dataIndex], value, j);
-	              var cell = document.createElement('DIV');
-	              cell.innerHTML = template;
-
-	              _this.$parent.$compile(cell);
-
-	              var _el = $el.children[j].children[i];
-	              _el.appendChild(cell);
-	            }
-	          }
-	        }
-	      });
-	    }
-	  }
-	};
-
-/***/ },
-/* 14 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"vui-table\">\n  <div class=\"vui-table-bd\">\n    <table>\n      <thead>\n        <tr>\n          <th v-for=\"col in columns\">\n            {{col.title}}\n          </th>\n        </tr>\n      </thead>\n      <tbody v-el:render>\n        <tr v-for=\"row in data\">\n          <td v-for=\"col in columns\">\n            {{{!col.render && col.dataIndex ? row[col.dataIndex] : ''}}}\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <div class=\"vui-table-ft\">\n    <!-- <vui-pagination></vui-pagination> -->\n  </div>\n</div>\n";
-
-/***/ },
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(16)
-	__vue_script__ = __webpack_require__(18)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] components/Suggest.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(21)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), false)
-	  if (!hotAPI.compatible) return
-	  var id = "_v-34bee8dc/Suggest.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(17);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(5)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-34bee8dc&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Suggest.vue", function() {
-				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js?id=_v-34bee8dc&scoped=true!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Suggest.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(4)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* format */\n.vui-suggest input[_v-34bee8dc], .vui-suggest ul[_v-34bee8dc] {\n  margin: 0;\n  padding: 0;\n}\n.vui-suggest input[_v-34bee8dc] {\n  outline: 0 none;\n  width: 100%;\n}\n.vui-suggest ul[_v-34bee8dc] {\n  list-style: none;\n}\n.vui-suggest a[_v-34bee8dc] {\n  text-decoration: none;\n  color: rgb(102, 102, 102);\n}\n/* styles */\n.vui-suggest[_v-34bee8dc] {\n  position: relative;\n}\n.vui-suggest ul[_v-34bee8dc] {\n  position: absolute;\n  left: 0;\n  overflow-y: auto;\n  min-width: 100%;\n  max-height: 130px;\n  background-color: rgb(255, 255, 255);\n  border: 1px solid rgb(217, 217, 217);\n  border-radius: 3px;\n  line-height: 1.5;\n  font-size: 12px;\n}\n.vui-suggest a[_v-34bee8dc] {\n  display: block;\n  padding: 4px 8px;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  cursor: pointer;\n}\n.vui-suggest .active[_v-34bee8dc] {\n  background-color: rgba(87, 197, 247, 0.2);\n}\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _coerceBoolean = __webpack_require__(19);
+	var _coerceBoolean = __webpack_require__(14);
 
 	var _coerceBoolean2 = _interopRequireDefault(_coerceBoolean);
 
-	var _ajax = __webpack_require__(20);
+	var _ajax = __webpack_require__(15);
 
 	var _ajax2 = _interopRequireDefault(_ajax);
 
@@ -11034,7 +10907,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 19 */
+/* 14 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11052,7 +10925,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 20 */
+/* 15 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -11078,10 +10951,466 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 
 /***/ },
-/* 21 */
+/* 16 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"vui-suggest\" _v-34bee8dc=\"\">\n  <input type=\"search\" autocomplete=\"off\" :placeholder=\"placeholder\" v-model=\"query\" @input=\"update\" @keydown.up=\"up\" @keydown.down=\"down\" @keydown.enter=\"hit\" @keydown.esc=\"reset\" @blur=\"showDropdown = false\" _v-34bee8dc=\"\">\n  <ul :style=\"{display: (showDropdown ? 'block' : 'none') }\" v-el:dropdown=\"\" _v-34bee8dc=\"\">\n    <li v-for=\"item in items\" :class=\"{'active': isActive($index)}\" _v-34bee8dc=\"\">\n      <a @mousedown.prevent=\"hit\" @mousemove=\"setActive($index)\" _v-34bee8dc=\"\">\n        <partial :name=\"templateName\" _v-34bee8dc=\"\"></partial>\n      </a>\n    </li>\n  </ul>\n</div>\n";
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(18)
+	__vue_script__ = __webpack_require__(20)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] components/Table.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(31)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "_v-499fb026/Table.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(19);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/.npminstall/sass-loader/4.0.0/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Table.vue", function() {
+				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/.npminstall/sass-loader/4.0.0/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Table.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 19 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".vui-table-bd {\n  width: 100%; }\n  .vui-table-bd table {\n    width: 100%;\n    max-width: 100%;\n    border-collapse: collapse;\n    border-spacing: 0; }\n  .vui-table-bd thead tr {\n    border: 1px solid #d4d4d4; }\n  .vui-table-bd th {\n    padding: 12px 4px;\n    background-color: #f8f8f8;\n    font-size: 12px;\n    text-align: left; }\n  .vui-table-bd tbody tr {\n    border: 1px solid #d4d4d4;\n    border-width: 0 1px; }\n  .vui-table-bd tbody tr:hover {\n    background-color: rgba(87, 197, 247, 0.2); }\n  .vui-table-bd td {\n    padding: 10px 4px;\n    overflow: hidden;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    font-size: 12px; }\n  .vui-table-bd tr:not(:last-child) {\n    border-bottom: 1px solid #f3f3f3; }\n  .vui-table-bd tr:last-child {\n    border-bottom: 1px solid #d4d4d4; }\n\n.vui-table-divider {\n  display: inline-block;\n  margin: 0 4px;\n  width: 1px;\n  height: 8px;\n  background-color: #ccc; }\n\n.vui-table-ft {\n  position: relative;\n  padding: 0 20px;\n  border: 1px solid #d4d4d4;\n  border-top: 0;\n  height: 30px;\n  line-height: 30px;\n  font-size: 12px; }\n\n.vui-pager {\n  position: absolute;\n  right: 18px;\n  top: 0; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Pagination = __webpack_require__(21);
+
+	var _Pagination2 = _interopRequireDefault(_Pagination);
+
+	var _Pager = __webpack_require__(26);
+
+	var _Pager2 = _interopRequireDefault(_Pager);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	  props: {
+	    columns: {
+	      type: Array
+	    },
+	    count: {
+	      type: Number,
+	      default: 0
+	    },
+	    pageSize: {
+	      type: Number,
+	      default: 15
+	    },
+	    options: {
+	      type: Array,
+	      default: [10, 20, 30, 40]
+	    },
+	    data: {
+	      type: Array,
+	      default: function _default() {
+	        return [];
+	      }
+	    },
+	    cur: {
+	      type: Number,
+	      default: 1
+	    },
+	    onChange: {
+	      type: Function,
+	      default: function _default() {}
+	    },
+	    onSelect: {
+	      type: Function,
+	      default: function _default() {}
+	    }
+	  },
+	  ready: function ready() {
+	    this.compileRender();
+	  },
+
+	  methods: {
+	    compileRender: function compileRender() {
+	      var _this = this;
+
+	      this.$nextTick(function () {
+	        var $el = _this.$els.render;
+
+	        for (var i = 0; i < _this.columns.length; i++) {
+	          var curCol = _this.columns[i];
+	          var dataIndex = curCol.dataIndex;
+	          var renderFn = curCol.render;
+	          if (renderFn) {
+	            for (var j = 0; j < _this.data.length; j++) {
+	              var value = _this.data[j];
+	              var template = renderFn(value[dataIndex], value, j);
+	              var cell = document.createElement('DIV');
+	              cell.innerHTML = template;
+
+	              _this.$parent.$compile(cell);
+
+	              var _el = $el.children[j].children[i];
+	              _el.appendChild(cell);
+	            }
+	          }
+	        }
+	      });
+	    },
+	    pageChange: function pageChange(page) {
+	      this.cur = page;
+	      this.onChange({
+	        pageNum: this.cur
+	      });
+	    },
+	    pageSizeSelect: function pageSizeSelect(size) {
+	      this.pageSize = +size;
+	      this.onChange({
+	        pageSize: size
+	      });
+	    }
+	  },
+	  components: {
+	    Pagination: _Pagination2.default,
+	    Pager: _Pager2.default
+	  }
+	};
+
+/***/ },
+/* 21 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(22)
+	__vue_script__ = __webpack_require__(24)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] components/Pagination.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(25)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "_v-44b8ac72/Pagination.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(23);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pagination.vue", function() {
+				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pagination.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 23 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  props: {
+	    count: {
+	      type: Number,
+	      default: 0
+	    },
+	    pageSize: {
+	      type: Number,
+	      default: 10
+	    },
+	    options: {
+	      type: Array,
+	      default: function _default() {
+	        return [0, 10, 20, 30, 40];
+	      }
+	    },
+	    onSelect: {
+	      type: Function,
+	      default: function _default() {}
+	    }
+	  },
+	  methods: {
+	    optionSelected: function optionSelected() {
+	      this.onSelect(this.pageSize);
+	    }
+	  }
+	};
+
+/***/ },
+/* 25 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"vui-pagination\">\n  每页显示\n  <select @change=\"optionSelected($event)\" v-model=\"pageSize\">\n    <option\n      v-for=\"option in options\"\n      selected=\"{{option == pageSize}}\"\n    >{{option}}</option>\n  </select>\n  条，共<span>{{count}}</span>条\n</div>\n";
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(27)
+	__vue_script__ = __webpack_require__(29)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] components/Pager.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(30)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  var id = "_v-145b3cca/Pager.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(28);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/.npminstall/sass-loader/4.0.0/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pager.vue", function() {
+				var newContent = require("!!./../node_modules/.npminstall/css-loader/0.24.0/css-loader/index.js!./../node_modules/vue-loader/lib/style-rewriter.js!./../node_modules/.npminstall/sass-loader/4.0.0/sass-loader/index.js!./../node_modules/vue-loader/lib/selector.js?type=style&index=0!./Pager.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".vui-pager ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  display: inline-block; }\n\n.vui-pager .item {\n  margin: 0 4px;\n  display: inline-block;\n  min-width: 28px;\n  line-height: 28px;\n  text-align: center;\n  font-size: 12px;\n  background-color: #fff;\n  color: #666;\n  border: 1px solid #d9d9d9;\n  border-radius: 3px; }\n\n.vui-pager a {\n  padding: 3px 5px;\n  display: block;\n  cursor: pointer;\n  height: 12px;\n  line-height: 14px;\n  text-decoration: none; }\n\n.vui-pager .item.active {\n  background-color: #369be9;\n  border-color: #369be9;\n  color: #fff; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.default = {
+	  props: {
+	    count: {
+	      type: Number,
+	      default: 0
+	    },
+	    pageSize: {
+	      type: Number,
+	      default: 10
+	    },
+	    cur: {
+	      type: Number,
+	      default: 1
+	    },
+	    onChange: {
+	      type: Function,
+	      default: function _default() {}
+	    }
+	  },
+	  data: function data() {
+	    return {
+	      total: 0,
+	      num: '',
+	      indexs: [],
+	      pageLeft: 0,
+	      pageRight: 0
+	    };
+	  },
+
+	  computed: {
+	    total: function total() {
+	      this.cur = 1;
+	      return ~~(this.count / this.pageSize) + (~~(this.count % this.pageSize) == 0 ? 0 : 1);
+	    },
+	    indexs: function indexs() {
+	      var bigger = this.total <= 9;
+	      var indexs = [];
+	      var start = bigger ? 1 : this.pageLeft;
+	      var end = bigger ? this.total : this.pageRight;
+	      for (var i = start; i <= end; i++) {
+	        indexs.push(i);
+	      }
+	      return indexs;
+	    },
+	    pageLeft: function pageLeft() {
+	      var left = Math.max(1, this.cur - 2);
+	      if (this.total - this.cur <= 2) {
+	        left = this.total - 4;
+	      }
+	      return left;
+	    },
+	    pageRight: function pageRight() {
+	      var right = Math.min(this.cur + 2, this.total);
+	      if (this.cur - 1 <= 2) {
+	        right = 1 + 4;
+	      }
+	      return right;
+	    }
+	  },
+	  watch: {
+	    cur: function cur() {
+	      this.onChange(this.cur);
+	    }
+	  },
+	  methods: {
+	    goto: function goto(data) {
+	      if (data != this.cur) {
+	        this.cur = data;
+	      }
+	    },
+	    gotoPage: function gotoPage() {
+	      if (!!this.num && this.num > 0 && this.num <= this.total) {
+	        this.cur = +this.num;
+	        this.num = '';
+	      }
+	    }
+	  }
+	};
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"vui-pager\">\n  <ul>\n    <li class=\"item\" v-if=\"cur != 1\"><a @click=\"cur--\"><</a></li>\n    <li class=\"item\" v-for=\"index in indexs\" :class=\"{ active: cur == index }\">\n      <a v-if='index == \"...\"'>{{ index }}</a>\n      <a v-else @click=\"goto(index)\">{{ index }}</a>\n    </li>\n    <li class=\"item\" v-if=\"cur != total\"><a @click=\"cur++\">></a></li>\n  </ul>\n  共<span>{{total}}</span>页\n  跳转到第<input type=\"text\" style=\"width:30px;\" v-model='num'>页\n  <input type=\"button\" name=\"确定\" value=\"确定\" @click='gotoPage'>\n</div>\n";
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"vui-table\">\n  <div class=\"vui-table-bd\">\n    <table>\n      <thead>\n        <tr>\n          <th v-for=\"col in columns\">\n            {{col.title}}\n          </th>\n        </tr>\n      </thead>\n      <tbody v-el:render>\n        <tr v-for=\"row in data\">\n          <td v-for=\"col in columns\">\n            {{{!col.render && col.dataIndex ? row[col.dataIndex] : ''}}}\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <div class=\"vui-table-ft\">\n    <Pagination :count=\"count\" :page-size=\"pageSize\" :options=\"options\" :on-select='pageSizeSelect'></Pagination>\n    <Pager :count=\"count\" :page-size=\"pageSize\" :on-change='pageChange'></Pager>\n  </div>\n</div>\n";
 
 /***/ }
 /******/ ])

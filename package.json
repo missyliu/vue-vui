@@ -1,6 +1,6 @@
 {
   "name": "vue-vui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "基于 Vue.js 的 UI 组件库",
   "main": "dist/vue-vui.js",
   "scripts": {

@@ -19,24 +19,50 @@
       </table>
     </div>
     <div class="vui-table-ft">
-      <!-- <vui-pagination></vui-pagination> -->
+      <Pagination :count="count" :page-size="pageSize" :options="options" :on-select='pageSizeSelect'></Pagination>
+      <Pager :count="count" :page-size="pageSize" :on-change='pageChange'></Pager>
     </div>
   </div>
 </template>
 
 <script>
-import vuiPagination from 'vue'
+import Pagination from './Pagination.vue'
+import Pager from './Pager.vue'
 
 export default {
   props: {
     columns: {
       type: Array
     },
+    count: {
+      type: Number,
+      default: 0
+    },
+    pageSize: {
+      type: Number,
+      default: 15
+    },
+    options: {
+      type: Array,
+      default: [10, 20, 30, 40]
+    },
     data: {
       type: Array,
       default() {
         return []
       }
+    },
+    cur: {
+      type: Number,
+      default: 1
+    },
+    onChange: {
+      type: Function,
+      default() {}
+    },
+    onSelect: {
+      type: Function,
+      default() {}
     }
   },
   ready() {
@@ -66,16 +92,32 @@ export default {
           }
         }
       })
+    },
+    pageChange(page) {
+      this.cur = page
+      this.onChange({
+        pageNum: this.cur
+      })
+    },
+    pageSizeSelect(size) {
+      this.pageSize = +size
+      this.onChange({
+        pageSize: size
+      })
     }
+  },
+  components: {
+    Pagination,
+    Pager
   }
 }
 </script>
 
 <style lang="scss">
 .vui-table {
-  position: relative;
+  // position: relative;
   &-bd {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     table {
       width: 100%;
@@ -120,5 +162,19 @@ export default {
     height: 8px;
     background-color: #ccc;
   }
+  &-ft {
+    position: relative;
+    padding: 0 20px;
+    border: 1px solid #d4d4d4;
+    border-top: 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+}
+.vui-pager {
+  position: absolute;
+  right: 18px;
+  top: 0;
 }
 </style>
